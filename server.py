@@ -19,7 +19,7 @@ def client_handler(client,addr):
             print('OUT: ',client)
             break
         msg = str(addr) + '>>> ' + data.decode('utf-8')
-        print('User: ')
+        print('UserIP: ')
         print('-----------')
         for c in clist:
             c.sendall(msg.encode('utf-8'))
